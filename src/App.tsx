@@ -1,3 +1,4 @@
+import { Link } from "@heroui/react";
 import Activity from "./Components/Activity";
 import { PasteData } from "./Components/PasteData";
 
@@ -15,9 +16,17 @@ function App() {
         ) : (
           <div className="mt-20 flex flex-col items-center gap-3">
             <div className=" text-center text-white/80">
-              No activities loaded. Please paste data to get started.
+              No activities loaded.
             </div>
             <PasteData />
+
+            <Link
+              href="https://app.court22.com/#/venues/34047bc5-91c6-4097-9f95-a52fe74c8833"
+              className="text-white"
+              target="_blank"
+            >
+              Data url
+            </Link>
           </div>
         )}
       </div>

@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+@layer utilities {
+  .fake-iso-court {
+    transform: skewY(-12deg) rotate(-10deg);
+    transform-origin: center;
+  }
+}
